@@ -1,9 +1,9 @@
 [![Build Status][travis-image]][travis-link]
 [![Coverage Status][codecov-image]][codecov-link]
+[![Greenkeeper badge][greenkeeper-image]][greenkeeper-link]
 
 # Lockbox for Firefox
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/mozilla-lockbox/lockbox-extension.svg)](https://greenkeeper.io/)
 
 Lockbox for Firefox is a work-in-progress extension for Firefox to improve upon
 Firefox's built-in password management. If you're interested, you should
@@ -42,6 +42,8 @@ version 2.0][license-link].
 [travis-link]: https://travis-ci.org/mozilla-lockbox/lockbox-extension
 [codecov-image]: https://img.shields.io/codecov/c/github/mozilla-lockbox/lockbox-extension.svg
 [codecov-link]: https://codecov.io/gh/mozilla-lockbox/lockbox-extension
+[greenkeeper-image]: https://badges.greenkeeper.io/mozilla-lockbox/lockbox-extension.svg
+[greenkeeper-link]: https://greenkeeper.io/
 [install-link]: /docs/install.md
 [docs-link]: /docs
 [contributing-link]: docs/contributing.md
