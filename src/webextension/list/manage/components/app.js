@@ -11,7 +11,6 @@ import AllItems from "../containers/all-items";
 import CurrentSelection from "../containers/current-selection";
 import GoHome from "../containers/go-home";
 import ItemFilter from "../../containers/item-filter";
-import ItemCount from "../containers/item-count";
 import ModalRoot from "../containers/modals";
 import SendFeedback from "../components/send-feedback";
 import Toolbar, { ToolbarSpace } from "../../../widgets/toolbar";
@@ -25,8 +24,6 @@ export default function App() {
         <div className={styles.app}>
           <section className={styles.appMain}>
             <Toolbar className={styles.sideToolbar}>
-              <ItemCount/>
-              <ToolbarSpace/>
               <AddItem/>
             </Toolbar>
             <Toolbar className={styles.mainToolbar}>
