@@ -23,10 +23,8 @@ export default function App() {
       <DocumentTitle title="lOCKBOx eNTRIEs">
         <div className={styles.app}>
           <section className={styles.appMain}>
-            <Toolbar className={styles.sideToolbar}>
+            <Toolbar className={styles.navigation}>
               <AddItem/>
-            </Toolbar>
-            <Toolbar className={styles.mainToolbar}>
               <GoHome/>
               <SendFeedback/>
             </Toolbar>
