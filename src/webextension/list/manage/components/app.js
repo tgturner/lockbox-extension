@@ -13,7 +13,7 @@ import GoHome from "../containers/go-home";
 import ItemFilter from "../../containers/item-filter";
 import ModalRoot from "../containers/modals";
 import SendFeedback from "../components/send-feedback";
-import Toolbar, { ToolbarSpace } from "../../../widgets/toolbar";
+import Toolbar from "../../../widgets/toolbar";
 
 import styles from "./app.css";
 
@@ -27,7 +27,6 @@ export default function App() {
               <AddItem/>
             </Toolbar>
             <Toolbar className={styles.mainToolbar}>
-              <ToolbarSpace/>
               <GoHome/>
               <SendFeedback/>
             </Toolbar>

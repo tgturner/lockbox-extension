@@ -24,18 +24,3 @@ Toolbar.propTypes = {
 Toolbar.defaultProps = {
   className: "",
 };
-
-export function ToolbarSpace({className}) {
-  const finalClassName = `${styles.toolbarSpace} ${className}`.trimRight();
-  return (
-    <span className={finalClassName}/>
-  );
-}
-
-ToolbarSpace.propTypes = {
-  className: PropTypes.string,
-};
-
-ToolbarSpace.defaultProps = {
-  className: "",
-};
