@@ -7,7 +7,7 @@ import chaiEnzyme from "chai-enzyme";
 import React from "react";
 
 import { mount } from "test/enzyme";
-import Toolbar from "src/webextension/widgets/toolbar";
+import Toolbar, { ToolbarSpace } from "src/webextension/widgets/toolbar";
 
 chai.use(chaiEnzyme());
 
@@ -37,4 +37,20 @@ describe("widgets > toolbar", () => {
     });
   });
 
+  describe("<ToolbarSpace/>", () => {
+    it("render space", () => {
+      const wrapper = mount(<ToolbarSpace/>);
+      expect(wrapper.find("span")).to.have.length(1);
+      expect(wrapper.find("span").prop("className")).to.match(
+        /^\S+toolbar-space\S+$/
+      );
+    });
+
+    it("merge classNames", () => {
+      const wrapper = mount(<ToolbarSpace className="foo"/>);
+      expect(wrapper.find("span").prop("className")).to.match(
+        /^\S+toolbar-space\S+ foo$/
+      );
+    });
+  });
 });

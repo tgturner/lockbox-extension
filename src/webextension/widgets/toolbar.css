@@ -3,6 +3,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 .toolbar {
+  display: flex;
   margin: 0;
   padding: 1ch;
   grid-column-start: span 2;
@@ -11,4 +12,8 @@
 
 .toolbar > * + * {
   margin-inline-start: 1ch;
+}
+
+.toolbar-space {
+  flex: 1;
 }
