@@ -50,7 +50,7 @@ const ConnectedItemDetails = connect(
   })
 )(ItemDetails);
 
-function CurrentSelection({editing, item, hideHome, numItems}) {
+function CurrentSelection({editing, item, hideHome}) {
   let inner;
   if (editing) {
     inner = <ConnectedEditItemDetails item={item}/>;
@@ -60,7 +60,7 @@ function CurrentSelection({editing, item, hideHome, numItems}) {
     // Don't show anything since we're still loading the item details.
     inner = null;
   } else {
-    inner = <Homepage count={numItems}/>;
+    inner = <Homepage/>;
   }
   return <div>{inner}</div>;
 }
@@ -69,7 +69,6 @@ CurrentSelection.propTypes = {
   editing: PropTypes.bool.isRequired,
   item: PropTypes.object,
   hideHome: PropTypes.bool.isRequired,
-  numItems: PropTypes.number.isRequired,
 };
 
 export default connect(
@@ -77,6 +76,5 @@ export default connect(
     editing: state.editor.editing,
     hideHome: state.editor.hideHome,
     item: state.cache.currentItem,
-    numItems: state.cache.items.length,
   })
 )(CurrentSelection);

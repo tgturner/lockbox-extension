@@ -52,11 +52,7 @@ all-items-empty =
 all-items-filtered = No results
 
 homepage-title =
-  { $count ->
-     [0]     Welcome to Lockbox
-     [1]     You have { $count } entry in your Lockbox
-    *[other] You have { $count } entries in your Lockbox
-  }
+  the simple way to store, retrieve, and manage website login info
 
 homepage-greeting =
   You’ve successfully installed the Lockbox browser extension! This Alpha
