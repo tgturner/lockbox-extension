@@ -4,7 +4,8 @@
 def test_login(login_page):
     """Log into Lockbox."""
     home_page = login_page.login('password')
-    assert 'the simple way to store, retrieve, and manage website login info' in home_page.lockie
+    title = "the simple way to store, retrieve, and manage website login info"
+    assert title in home_page.lockie
 
 
 def test_add_entry(home_page):
