@@ -9,7 +9,8 @@ class_names = [{
     # Button Styles
     'webextension/widgets/button.css': [
         'button',
-        'minimal',
+        'primary-theme',
+        'normal-theme',
         'ghost-theme'
     ],
     # Item Summary Styles
