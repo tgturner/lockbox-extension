@@ -100,6 +100,11 @@ function startup({webExtension}, reason) {
         objects: ["manage"],
         extra_keys: ["fxauid"],
       },
+      "faq": {
+        methods: ["faqClick"],
+        objects: ["manage"],
+        extra_keys: ["fxauid"],
+      },
       "itemCopied": {
         methods: ["usernameCopied", "passwordCopied"],
         objects: ["manage", "doorhanger"],
