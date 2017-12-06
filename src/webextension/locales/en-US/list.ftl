@@ -47,6 +47,7 @@ toolbar-item-count =
 toolbar-add-item = New Entry
 toolbar-go-home = Home
 toolbar-send-feedback = Feedback
+toolbar-open-faq = FAQs
 
 all-items-empty =
   When you create an entry, it will be saved in this sidebar.
